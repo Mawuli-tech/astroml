@@ -11,7 +11,7 @@
 
 #[cfg(test)]
 mod auth_tests {
-    use soroban_sdk::{testutils::Address as _, Address, Env, String};
+    use soroban_sdk::{testutils::{Address as _, Ledger as _}, Address, Env, String};
     use crate::{Error, FraudRegistry, FraudRegistryClient};
 
     // Helper: deploy and initialise a fresh contract instance.
